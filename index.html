@@ -11,7 +11,7 @@
     <h1>Exchange Rate Calculator</h1>
     <p>Chose the currency and the amounts to get the exchange rate</p>
 
-    <div class="cotainer">
+    <div class="container">
       <div class="currency">
         <select id="currency-one">
           <option value="AED">AED</option>
@@ -67,7 +67,14 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-one" placeholder="0" value="1" min="1" />
+
+        <input 
+          type="number"
+          min=0
+          id="amount-one" 
+          placeholder="0.00"  
+          autofocus
+        />
       </div>
 
       <div class="swap-rate-container">
@@ -132,7 +139,8 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-two" placeholder="0" />
+
+        <input id="amount-two" />
       </div>
     </div>
 
