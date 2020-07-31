@@ -25,10 +25,11 @@ function swap(){
 }
 
 // Event Listeners
+document.addEventListener('DOMContentLoaded', calculate);
 currencySelect_one.addEventListener("change", calculate);
 currencyAmount_one.addEventListener("input", calculate);
 currencySelect_two.addEventListener("change", calculate);
 currencyAmount_two.addEventListener("input", calculate);
 swapBtn.addEventListener('click', swap);
 
-calculate();
+
